@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Maria Mikhaleva](https://up.htmlacademy.ru/adaptive/22/user/1031959).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
