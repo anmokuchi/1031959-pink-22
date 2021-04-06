@@ -1,0 +1,15 @@
+.menu {
+  background-color: $midnight;
+}
+
+.menu__list {
+  @include list-reset;
+}
+
+.menu__link {
+  color: $white;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
