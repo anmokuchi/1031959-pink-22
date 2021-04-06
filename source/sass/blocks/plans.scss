@@ -1,0 +1,38 @@
+.plans {
+  background-color: $white-smoke;
+}
+
+.plans__list {
+  @include list-reset;
+}
+
+.plans__header {
+  background-color: $midnight;
+  border: 2px solid $midnight;
+}
+
+.plans__title {
+  color: $white;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.plans__price {
+  color: $white;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.plans__feature {
+  background-color: $white;
+  border: 2px solid $whisper;
+}
+
+.plans__feature-name {
+  line-height: 30px;
+  text-transform: uppercase;
+}
