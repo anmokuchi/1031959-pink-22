@@ -1,0 +1,14 @@
+.reviews__list {
+  @include list-reset;
+}
+
+.reviews__author-name {
+  color: $black;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__text {
+  line-height: 30px;
+}
