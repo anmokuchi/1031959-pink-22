@@ -1,0 +1,22 @@
+.advantages {
+  background-color: $white-smoke;
+}
+
+.advantages__header {
+  background-color: $white;
+}
+
+.advantages__intro {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__title {
+  color: $black;
+  font-size: 18px;
+}
