@@ -1,0 +1,19 @@
+// Colors
+
+$white: #ffffff;
+$white-smoke: #f2f2f2;
+$whisper: #e5e5e5;
+$cerise: #d22856;
+$medium-sea-green: #2aab6d;
+$eucalyptus: #1c9b5e;
+$midnight: #283645;
+$blue-charcoal: #1d2631;
+$black: #000000;
+
+// Mixins
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

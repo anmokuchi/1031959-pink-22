@@ -1,0 +1,26 @@
+.download {
+  background-color: $blue-charcoal;
+  color: $white;
+}
+
+.download__wrapper {
+  padding: 28px 20px 38px;
+}
+
+.download__button {
+  margin-bottom: 38px;
+}
+
+.download__list {
+  @include list-reset;
+}
+
+.download__legend {
+  color: $white;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  margin-top: 31px;
+}
