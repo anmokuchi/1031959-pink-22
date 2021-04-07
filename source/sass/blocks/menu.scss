@@ -6,10 +6,19 @@
   @include list-reset;
 }
 
+.menu__item {
+  border-bottom: 1px solid $black;
+  box-shadow: inset 0 1px 0 rgba($white, 0.15);
+}
+
 .menu__link {
   color: $white;
   font-weight: bold;
   font-size: 18px;
   line-height: 32px;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding: 25px;
 }

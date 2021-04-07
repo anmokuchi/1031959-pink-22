@@ -67,13 +67,13 @@
       </section>
       <section class="advantages">
         <header class="advantages__header">
-          <div class="advantages__wrapper">
+          <div class="advantages__top-wrapper">
             <h2 class="visually-hidden">Наши преимущества</h2>
             <p class="advantages__intro">Устали от серости мегаполиса?</p>
             <p class="advantages__intro">Нам есть, что вам предложить!</p>
           </div>
         </header>
-        <div class="advantages__wrapper">
+        <div class="advantages__bottom-wrapper">
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--mood">
               <h3 class="advantages__title">Поднимает настроение</h3>
@@ -125,68 +125,70 @@
         </div>
       </section>
       <section class="plans slider">
-        <h2 class="visually-hidden">Планы подписки</h2>
-        <ul class="plans__list slider__list">
-          <li class="plans__item slider__item">
-            <header class="plans__header">
-              <h3 class="plans__title">База</h3>
-              <p class="plans__price">1,99 USD</p>
-            </header>
-            <p class="plans__feature">
-              <span class="plans__feature-name">Розовый фильтр</span>
-              <span class="plans__feature-availability plans__feature-availability--available">Да</span>
-            </p>
-            <p class="plans__feature">
-              <span class="plans__feature-name">Смайлики</span>
-              <span class="plans__feature-availability plans__feature-availability--not-available">Нет</span>
-            </p>
-            <p class="plans__feature">
-              <span class="plans__feature-name">Комментарии</span>
-              <span class="plans__feature-availability plans__feature-availability--not-available">Нет</span>
-            </p>
-          </li>
-          <li class="plans__item slider__item slider__item--active">
-            <header class="plans__header">
-              <h3 class="plans__title">Стандарт</h3>
-              <p class="plans__price">3,99 USD</p>
-            </header>
-            <p class="plans__feature">
-              <span class="plans__feature-name">Розовый фильтр</span>
-              <span class="plans__feature-availability plans__feature-availability--available">Да</span>
-            </p>
-            <p class="plans__feature">
-              <span class="plans__feature-name">Смайлики</span>
-              <span class="plans__feature-availability plans__feature-availability--available">Да</span>
-            </p>
-            <p class="plans__feature">
-              <span class="plans__feature-name">Комментарии</span>
-              <span class="plans__feature-availability plans__feature-availability--not-available">Нет</span>
-            </p>
-          </li>
-          <li class="plans__item slider__item">
-            <header class="plans__header">
-              <h3 class="plans__title">Анлим</h3>
-              <p class="plans__price">9,99 USD</p>
-            </header>
-            <p class="plans__feature">
-              <span class="plans__feature-name">Розовый фильтр</span>
-              <span class="plans__feature-availability plans__feature-availability--available">Да</span>
-            </p>
-            <p class="plans__feature">
-              <span class="plans__feature-name">Смайлики</span>
-              <span class="plans__feature-availability plans__feature-availability--available">Да</span>
-            </p>
-            <p class="plans__feature">
-              <span class="plans__feature-name">Комментарии</span>
-              <span class="plans__feature-availability plans__feature-availability--available">Да</span>
-            </p>
-          </li>
-        </ul>
-        <p class="plans__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
-          <button class="slider__toggle slider__toggle--current" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
-        </p>
+        <div class="plans__wrapper">
+          <h2 class="visually-hidden">Планы подписки</h2>
+          <ul class="plans__list slider__list">
+            <li class="plans__item slider__item">
+              <header class="plans__header">
+                <h3 class="plans__title">База</h3>
+                <p class="plans__price">1,99 USD</p>
+              </header>
+              <p class="plans__feature">
+                <span class="plans__feature-name">Розовый фильтр</span>
+                <span class="plans__feature-availability plans__feature-availability--available">Да</span>
+              </p>
+              <p class="plans__feature">
+                <span class="plans__feature-name">Смайлики</span>
+                <span class="plans__feature-availability plans__feature-availability--not-available">Нет</span>
+              </p>
+              <p class="plans__feature">
+                <span class="plans__feature-name">Комментарии</span>
+                <span class="plans__feature-availability plans__feature-availability--not-available">Нет</span>
+              </p>
+            </li>
+            <li class="plans__item slider__item slider__item--active">
+              <header class="plans__header">
+                <h3 class="plans__title">Стандарт</h3>
+                <p class="plans__price">3,99 USD</p>
+              </header>
+              <p class="plans__feature">
+                <span class="plans__feature-name">Розовый фильтр</span>
+                <span class="plans__feature-availability plans__feature-availability--available">Да</span>
+              </p>
+              <p class="plans__feature">
+                <span class="plans__feature-name">Смайлики</span>
+                <span class="plans__feature-availability plans__feature-availability--available">Да</span>
+              </p>
+              <p class="plans__feature">
+                <span class="plans__feature-name">Комментарии</span>
+                <span class="plans__feature-availability plans__feature-availability--not-available">Нет</span>
+              </p>
+            </li>
+            <li class="plans__item slider__item">
+              <header class="plans__header">
+                <h3 class="plans__title">Анлим</h3>
+                <p class="plans__price">9,99 USD</p>
+              </header>
+              <p class="plans__feature">
+                <span class="plans__feature-name">Розовый фильтр</span>
+                <span class="plans__feature-availability plans__feature-availability--available">Да</span>
+              </p>
+              <p class="plans__feature">
+                <span class="plans__feature-name">Смайлики</span>
+                <span class="plans__feature-availability plans__feature-availability--available">Да</span>
+              </p>
+              <p class="plans__feature">
+                <span class="plans__feature-name">Комментарии</span>
+                <span class="plans__feature-availability plans__feature-availability--available">Да</span>
+              </p>
+            </li>
+          </ul>
+          <p class="plans__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--current" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
@@ -214,9 +216,9 @@
               г. Санкт-Петербург, ул. Большая Конюшенная 19/8
             </p>
           </div>
-          <div class="contacts__map">
-            <img class="contacts__map-image" src="img/map-mobile.png" width="320" height="200" alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-          </div>
+        </div>
+        <div class="contacts__map">
+          <img class="contacts__map-image" src="img/map-mobile.png" width="320" height="200" alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </div>
       </section>
     </main>

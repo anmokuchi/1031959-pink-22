@@ -4,9 +4,14 @@
   background-repeat: no-repeat;
 }
 
+.about__wrapper {
+  padding: 29px 20px 320px;
+}
+
 .about__slogan {
   color: $white;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  margin: 0;
 }

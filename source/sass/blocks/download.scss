@@ -4,7 +4,11 @@
 }
 
 .download__wrapper {
-  padding: 20px 28px;
+  padding: 28px 20px 38px;
+}
+
+.download__button {
+  margin-bottom: 38px;
 }
 
 .download__list {
@@ -16,4 +20,6 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  margin-top: 31px;
 }
