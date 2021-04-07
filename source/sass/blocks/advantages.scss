@@ -14,6 +14,7 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  text-align: center;
   margin: 0;
 }
 
@@ -23,6 +24,10 @@
 
 .advantages__list {
   @include list-reset;
+}
+
+.advantages__item {
+  text-align: center;
 }
 
 .advantages__title {
