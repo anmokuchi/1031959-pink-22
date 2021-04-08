@@ -1,0 +1,7 @@
+.app__list {
+  @include list-reset;
+}
+
+.app__item {
+  margin-top: 34px;
+}
