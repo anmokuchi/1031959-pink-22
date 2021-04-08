@@ -1,0 +1,47 @@
+.field {
+  border: none;
+  padding: 0;
+}
+
+.field__wrapper {
+  padding: 42px 20px;
+}
+
+.field__legend {
+  color: $cerise;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.field__label {
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.field__label--pink {
+  color: $cerise;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.field__input,
+.field__textarea {
+  color: $midnight;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid $whisper;
+  border-radius: 3px;
+  padding: 23px 20px;
+
+  &::placeholder {
+    color: $midnight;
+  }
+}
+
+.field--grey-bg {
+  background-color: $white-smoke;
+}
