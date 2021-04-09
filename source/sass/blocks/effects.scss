@@ -1,0 +1,8 @@
+.effects {
+  padding: 0;
+  border: none;
+}
+
+.effects__list {
+  @include list-reset;
+}
