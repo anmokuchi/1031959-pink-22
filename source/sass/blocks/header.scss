@@ -4,6 +4,16 @@
 }
 
 .header__wrapper {
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.header__bar {
   padding: 21px 20px;
   display: flex;
   flex-direction: row;
@@ -12,6 +22,12 @@
   @media (min-width: $tablet-width) {
     padding: 27px 20px 43px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
 }
 
 .header__logo {
@@ -19,5 +35,11 @@
 
   @media (min-width: $tablet-width) {
     height: 40px;
+  }
+}
+
+.header__menu-toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
