@@ -1,0 +1,40 @@
+.research {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white-smoke;
+  }
+}
+
+.research__wrapper {
+  padding: 54px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 115px 36px;
+  }
+}
+
+.research__title {
+  color: $black;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.research__text {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.research__link {
+  color: $cerise;
+}

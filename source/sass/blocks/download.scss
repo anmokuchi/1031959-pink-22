@@ -1,6 +1,9 @@
 .download {
-  background-color: $blue-charcoal;
   color: $white;
+
+  @media (max-width: $mobile-width-only) {
+    background-color: $blue-charcoal;
+  }
 }
 
 .download__wrapper {

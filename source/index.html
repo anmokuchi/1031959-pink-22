@@ -2,66 +2,69 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="body">
     <header class="header">
       <div class="header__wrapper">
-        <a class="header__logo">
-          <img class="header__logo-image" src="img/header-logo-mobile.svg" width="74" height="23" alt="Приложение «Пинк»">
-        </a>
-        <button class="header__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="header__bar">
+          <a class="header__logo">
+            <img class="header__logo-image" src="img/header-logo-mobile.svg" width="74" height="23" alt="Приложение «Пинк»">
+          </a>
+          <button class="header__menu-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link link">
+                Главная
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link link" href="https://htmlacademy.ru/intensive/adaptive">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a class="menu__link link">
-              Главная
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link link" href="https://htmlacademy.ru/intensive/adaptive">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
     <main class="main">
       <h1 class="visually-hidden">Приложение «Пинк» — иной взгляд на мир</h1>
       <section class="about">
-        <header class="about__header">
-          <div class="about__wrapper">
+        <div class="about__wrapper">
+          <header class="about__header">
             <h2 class="visually-hidden">О приложении</h2>
             <p class="about__slogan">Взгляните на жизнь иначе!</p>
-          </div>
-        </header>
-        <div class="about__download download">
-          <div class="download__wrapper">
-            <button class="download__button button">Скачать приложение</button>
-            <ul class="download__list">
-              <li class="download__item">
-                <a class="download__link download__link--ios" href="#">Скачать для IOS</a>
-              </li>
-              <li class="download__item">
-                <a class="download__link download__link--android" href="#">Скачать для Android</a>
-              </li>
-              <li class="download__item">
-                <a class="download__link download__link--windows" href="#">Скачать для Windows</a>
-              </li>
-            </ul>
-            <p class="download__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </header>
+          <div class="about__download download">
+            <div class="download__wrapper">
+              <button class="download__button button">Скачать приложение</button>
+              <ul class="download__list">
+                <li class="download__item">
+                  <a class="download__link download__link--ios" href="#">Скачать для IOS</a>
+                </li>
+                <li class="download__item">
+                  <a class="download__link download__link--android" href="#">Скачать для Android</a>
+                </li>
+                <li class="download__item">
+                  <a class="download__link download__link--windows" href="#">Скачать для Windows</a>
+                </li>
+              </ul>
+              <p class="download__legend">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
           </div>
         </div>
       </section>
@@ -90,6 +93,13 @@
           </ul>
       </div>
       </section>
+      <section class="research">
+        <div class="research__wrapper">
+          <h2 class="research__title">Эффект на 24 часа!</h2>
+          <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </section>
       <section class="reviews">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы о нас</h2>
@@ -97,20 +107,23 @@
             <li class="reviews__item slider__item slider__item--active">
               <div class="reviews__author-info">
                 <strong class="reviews__author-name">Николай Петров</strong>
-                <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
+                <span class="reviews__author-age">25 лет, водитель трамвая</span>
               </div>
+              <blockquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</blockquote>
             </li>
             <li class="reviews__item slider__item">
               <div class="reviews__author-info">
                 <strong class="reviews__author-name">Имя Фамилия</strong>
-                <blockquote class="reviews__text">«Текст отзыва»</blockquote>
+                <span class="reviews__author-age">возраст, профессия</span>
               </div>
+              <blockquote class="reviews__text">«Текст отзыва»</blockquote>
             </li>
             <li class="reviews__item slider__item">
               <div class="reviews__author-info">
                 <strong class="reviews__author-name">Имя Фамилия</strong>
-                <blockquote class="reviews__text">«Текст отзыва»</blockquote>
+                <span class="reviews__author-age">возраст, профессия</span>
               </div>
+              <blockquote class="reviews__text">«Текст отзыва»</blockquote>
             </li>
           </ul>
           <p class="reviews__controls slider__controls">
@@ -128,6 +141,11 @@
         <div class="plans__wrapper">
           <h2 class="visually-hidden">Планы подписки</h2>
           <ul class="plans__list slider__list">
+            <li class="plans__legend">
+              <p class="plans__feature">Розовый фильтр</p>
+              <p class="plans__feature">Смайлики</p>
+              <p class="plans__feature">Комментарии</p>
+            </li>
             <li class="plans__item slider__item">
               <header class="plans__header">
                 <h3 class="plans__title">База</h3>
@@ -194,27 +212,29 @@
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Наши контакты</h2>
           <p class="contacts__intro">Остались вопросы? Свяжитесь с нами!</p>
-          <div class="contacts__item">
-            <b class="contacts__title">Звоните:</b>
-            <p class="contacts__text">
-              <a class="contacts__link link" href="tel:+78125556666">
-                +7 (812) 555-66-66
-              </a>
-            </p>
-          </div>
-          <div class="contacts__item">
-            <b class="contacts__title">Пишите:</b>
-            <p class="contacts__text">
-              <a class="contacts__link link" href="mailto:mail@htmlacademy.ru">
-                mail@htmlacademy.ru
-              </a>
-            </p>
-          </div>
-          <div class="contacts__item">
-            <b class="contacts__title">Приезжайте в гости:</b>
-            <p class="contacts__text">
-              г. Санкт-Петербург, ул. Большая Конюшенная 19/8
-            </p>
+          <div class="contacts__list">
+            <div class="contacts__item">
+              <b class="contacts__title">Звоните:</b>
+              <p class="contacts__text">
+                <a class="contacts__link link" href="tel:+78125556666">
+                  +7 (812) 555-66-66
+                </a>
+              </p>
+            </div>
+            <div class="contacts__item contacts__item--mail">
+              <b class="contacts__title">Пишите:</b>
+              <p class="contacts__text">
+                <a class="contacts__link link" href="mailto:mail@htmlacademy.ru">
+                  mail@htmlacademy.ru
+                </a>
+              </p>
+            </div>
+            <div class="contacts__item contacts__item--address">
+              <b class="contacts__title">Приезжайте в гости:</b>
+              <p class="contacts__text">
+                ул. Большая Конюшенная 19/8
+              </p>
+            </div>
           </div>
         </div>
         <div class="contacts__map">

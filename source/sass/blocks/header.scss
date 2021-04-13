@@ -4,5 +4,45 @@
 }
 
 .header__wrapper {
-  padding: 23px 20px;
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.header__bar {
+  padding: 21px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding: 0;
+    padding-top: 27px;
+    padding-bottom: 43px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin: 0;
+  }
+}
+
+.header__logo {
+  height: 23px;
+
+  @media (min-width: $tablet-width) {
+    height: 40px;
+  }
+}
+
+.header__menu-toggle {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
