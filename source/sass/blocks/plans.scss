@@ -21,6 +21,7 @@
 .plans__list {
   @include list-reset;
   display: flex;
+  overflow-x: hidden;
 }
 
 .plans__legend {
