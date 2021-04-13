@@ -10,6 +10,12 @@ $midnight: #283645;
 $blue-charcoal: #1d2631;
 $black: #000000;
 
+// Viewports
+
+$tablet-width: 660px;
+$desktop-width: 1200px;
+$mobile-width-only: 659px;
+
 // Mixins
 
 @mixin list-reset {
