@@ -2,6 +2,9 @@
   background-color: $midnight;
   // background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
+}
+
+.about__wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -9,16 +12,23 @@
   @media (max-width: $mobile-width-only) {
     align-items: center;
   }
-}
 
-.about__header {
   @media (min-width: $tablet-width) {
-    width: 300px;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
   }
 }
 
-.about__wrapper {
+.about__header {
   padding: 29px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .about__slogan {
