@@ -2,7 +2,7 @@
   background-color: $midnight;
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  padding: 36px 20px;
+  padding: 36px 0;
 }
 
 .inner-page__title {
@@ -15,7 +15,8 @@
 }
 
 .inner-page__wrapper {
-  padding: 54px 20px 55px;
+  padding-top: 54px;
+  padding-bottom: 55px;
 }
 
 .inner-page__intro {
