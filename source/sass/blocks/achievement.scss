@@ -1,7 +1,24 @@
-.achievement__list {
-  @include list-reset;
+.achievement {
+  @media (min-width: $tablet-width) {
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 }
 
-.achievement__item {
+.achievement__list {
+  @include list-reset;
+
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
+
+.achievement__item:not(:first-child) {
   margin-top: 43px;
 }

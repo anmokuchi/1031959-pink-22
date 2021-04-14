@@ -1,10 +1,18 @@
 .field {
   border: none;
   padding: 0;
-}
+  margin: 0;
 
-.field__wrapper {
-  padding: 42px 20px;
+  @media (min-width: $tablet-width) {
+    border: 2px solid $whisper;
+    border-radius: 3px;
+    padding: 47px 60px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .field__legend {
@@ -12,7 +20,10 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 22px;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 22px;
+  }
 }
 
 .field__label {
@@ -42,5 +53,14 @@
 }
 
 .field--grey-bg {
-  background-color: $white-smoke;
+  @media (max-width: $mobile-width-only) {
+    background-color: $white-smoke;
+    padding: 20px 0 42px;
+
+    @include container-reset;
+  }
+}
+
+.field__legend--mobile-hidden {
+  @include hidden-on-mobile;
 }

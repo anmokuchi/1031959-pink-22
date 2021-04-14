@@ -1,5 +1,30 @@
-.form__wrapper {
-  padding: 0 20px 26px;
+.form__container {
+  display: grid;
+  row-gap: 44px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+  }
+}
+
+.form__controls {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .form__clarify {

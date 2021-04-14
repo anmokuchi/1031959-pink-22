@@ -12,9 +12,10 @@ $black: #000000;
 
 // Viewports
 
-$tablet-width: 660px;
-$desktop-width: 1200px;
 $mobile-width-only: 659px;
+$tablet-width: 660px;
+$tablet-width-only: 1199px;
+$desktop-width: 1200px;
 
 // Mixins
 
@@ -22,4 +23,15 @@ $mobile-width-only: 659px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin container-reset {
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+}
+
+@mixin hidden-on-mobile {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

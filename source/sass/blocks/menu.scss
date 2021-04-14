@@ -1,9 +1,15 @@
 .menu {
   background-color: $midnight;
 
+  @media (max-width: $tablet-width-only) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    @include container-reset;
+  }
+
   @media (min-width: $desktop-width) {
     background: none;
-    width: 620px;
   }
 }
 
