@@ -1,15 +1,12 @@
 .reviews__wrapper {
-  padding: 50px 20px 60px;
+  padding-top: 50px;
+  padding-bottom: 60px;
 
-  @media (min-width: $tablet-width) {
-    width: 620px;
-    margin: 0 auto;
-  }
+  // @media (min-width: $tablet-width) {
+  // }
 
-  @media (min-width: $desktop-width) {
-    width: 940px;
-    padding: 72px 0;
-  }
+  // @media (min-width: $desktop-width) {
+  // }
 }
 
 .reviews__list {
