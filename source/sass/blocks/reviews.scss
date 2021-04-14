@@ -36,9 +36,7 @@
 }
 
 .reviews__author-age {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
+  @include hidden-on-mobile;
 }
 
 .reviews__text {

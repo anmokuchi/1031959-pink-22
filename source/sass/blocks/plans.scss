@@ -29,9 +29,7 @@
 .plans__legend {
   margin-top: auto;
 
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
+  @include hidden-on-mobile;
 }
 
 .plans__item {

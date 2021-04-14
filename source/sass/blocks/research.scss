@@ -1,7 +1,5 @@
 .research {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
+  @include hidden-on-mobile;
 
   @media (min-width: $desktop-width) {
     background-color: $white-smoke;
