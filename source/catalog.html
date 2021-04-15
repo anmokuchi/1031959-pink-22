@@ -49,7 +49,7 @@
       </header>
       <div class="container">
         <div class="inner-page__wrapper">
-          <p class="inner-page__intro">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="inner-page__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </div>
       </div>
       <section class="gallery">
@@ -144,56 +144,61 @@
         </div>
       </section>
       <section class="img-upload">
-        <h2 class="visually-hidden">Добавьте свое фото</h2>
-        <div class="inner-page__wrapper">
-          <p class="img-upload__intro">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="container">
+          <h2 class="visually-hidden">Добавьте свое фото</h2>
+          <header class="img-upload__header">
+            <p class="inner-page__text">Затмите их всех!</p>
+            <p class="inner-page__text">Выкладывайте все, что накопилось в телефоне!</p>
+          </header>
         </div>
         <form class="img-upload__form" id="upload-select-image" method="POST" action="https://echo.htmlacademy.ru" enctype="multipart/form-data">
-          <div class="img-upload__wrapper">
-            <div class="img-upload__preview-container">
-              <div class="img-upload__preview">
-                <img src="img/photo-7-tablet.jpg" width="280" height="374" alt="Предварительный просмотр фотографии">
-              </div>
-              <fieldset class="img-upload__effects  effects">
-                <div class="effects__wrapper slider">
-                  <p class="effects__toggles slider__toggles">
-                    <button class="effects__toggle effects__toggle--crop slider__toggle slider__toggle--current" type="button">Кадрирование</button>
-                    <button class="effects__toggle effects__toggle--fill slider__toggle" type="button">Заливка</button>
-                    <button class="effects__toggle effects__toggle--contrast slider__toggle" type="button">Контраст</button>
-                  </p>
-                  <ul class="effects__list slider__list">
-                    <li class="effects__item slider__item slider__item--active">
-                      <div class="effect-level">
-                        <input class="effect-level__value" type="number" name="crop-level" id="crop-value" value="20">
-                        <div class="effect-level__line">
-                          <div class="effect-level__pin" tabindex="0">Кнопка изменения глубины эффекта</div>
-                          <div class="effect-level__depth">Глубина эффекта</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="effects__item slider__item">
-                      <div class="effect-level">
-                        <input class="effect-level__value" type="number" name="fill-level" id="fill-value" value="20">
-                        <div class="effect-level__line">
-                          <div class="effect-level__pin" tabindex="0">Кнопка изменения глубины эффекта</div>
-                          <div class="effect-level__depth">Глубина эффекта</div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="effects__item slider__item">
-                      <div class="effect-level">
-                        <input class="effect-level__value" type="number" name="contrast-level" id="contrast-value" value="20">
-                        <div class="effect-level__line">
-                          <div class="effect-level__pin" tabindex="0">Кнопка изменения глубины эффекта</div>
-                          <div class="effect-level__depth">Глубина эффекта</div>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+          <div class="container">
+            <div class="img-upload__wrapper">
+              <div class="img-upload__preview-container">
+                <div class="img-upload__preview">
+                  <img src="img/photo-7-tablet.jpg" width="280" height="374" alt="Предварительный просмотр фотографии">
                 </div>
-              </fieldset>
-              <button class="img-upload__button img-upload__button--submit button" type="submit" id="upload-submit">Запостить</button>
-              <button class="img-upload__button img-upload__button--cancel button" type="reset" id="upload-cancel">Отмена</button>
+                <fieldset class="img-upload__effects  effects">
+                  <div class="effects__wrapper slider">
+                    <p class="effects__toggles slider__toggles">
+                      <button class="effects__toggle effects__toggle--crop slider__toggle slider__toggle--current" type="button">Кадрирование</button>
+                      <button class="effects__toggle effects__toggle--fill slider__toggle" type="button">Заливка</button>
+                      <button class="effects__toggle effects__toggle--contrast slider__toggle" type="button">Контраст</button>
+                    </p>
+                    <ul class="effects__list slider__list">
+                      <li class="effects__item slider__item slider__item--active">
+                        <div class="effect-level">
+                          <input class="effect-level__value" type="number" name="crop-level" id="crop-value" value="20">
+                          <div class="effect-level__line">
+                            <div class="effect-level__pin" tabindex="0">Кнопка изменения глубины эффекта</div>
+                            <div class="effect-level__depth">Глубина эффекта</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="effects__item slider__item">
+                        <div class="effect-level">
+                          <input class="effect-level__value" type="number" name="fill-level" id="fill-value" value="20">
+                          <div class="effect-level__line">
+                            <div class="effect-level__pin" tabindex="0">Кнопка изменения глубины эффекта</div>
+                            <div class="effect-level__depth">Глубина эффекта</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="effects__item slider__item">
+                        <div class="effect-level">
+                          <input class="effect-level__value" type="number" name="contrast-level" id="contrast-value" value="20">
+                          <div class="effect-level__line">
+                            <div class="effect-level__pin" tabindex="0">Кнопка изменения глубины эффекта</div>
+                            <div class="effect-level__depth">Глубина эффекта</div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </fieldset>
+                <button class="img-upload__button img-upload__button--submit button" type="submit" id="upload-submit">Запостить</button>
+                <button class="img-upload__button img-upload__button--cancel button" type="reset" id="upload-cancel">Отмена</button>
+              </div>
             </div>
           </div>
         </form>
