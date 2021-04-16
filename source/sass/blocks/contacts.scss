@@ -22,18 +22,16 @@
 }
 
 .contacts__list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-items: center;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 90px;
   }
 
   @media (min-width: $desktop-width) {
-    align-items: flex-start;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -71,10 +69,12 @@
 
 .contacts__item--address {
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 }
