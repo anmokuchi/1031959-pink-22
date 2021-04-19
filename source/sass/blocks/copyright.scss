@@ -1,3 +1,14 @@
+.copyright {
+  display: grid;
+  grid-template-columns: 1fr 27px;
+  column-gap: 15px;
+  align-items: center;
+}
+
 .copyright__text {
   line-height: 18px;
+}
+
+.copyright__logo-image {
+  vertical-align: bottom;
 }

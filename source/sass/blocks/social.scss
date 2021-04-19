@@ -1,3 +1,39 @@
 .social__list {
   @include list-reset;
+  display: flex;
+  justify-content: center;
+  margin-right: -8px;
+}
+
+.social__item {
+  margin-right: 8px;
+}
+
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid rgba($midnight, 0.1);
+  border-radius: 50%;
+
+  &--twitter {
+    background-image: url("../../img/twitter.svg");
+  }
+  &--facebook {
+    background-image: url("../../img/facebook.svg");
+  }
+  &--youtube {
+    background-image: url("../../img/youtube.svg");
+  }
+
+  &:hover {
+    border-color: $midnight;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border-color: rgba($midnight, 0.35);
+  }
 }
