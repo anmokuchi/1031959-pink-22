@@ -1,28 +1,55 @@
 .about {
+  $about-shift: -66px;
+
+  height: 733px;
   background-color: $midnight;
-  // background-image: url("../../img/back-mobile.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../../img/back-screen.png"), url("../../img/back-tablet.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 95% 176px, center top;
+  background-size: auto 300px, auto 66%;
+  position: relative;
+  top: $about-shift;
+  margin-bottom: $about-shift;
+  display: grid;
+  grid-template-rows: 1fr min-content;
+
+  @media (min-width: $tablet-width) {
+    $about-shift: -110px;
+
+    height: 729px;
+    background-size: auto 545px, cover;
+    background-position: bottom;
+    top: $about-shift;
+    margin-bottom: $about-shift;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 853px;
+    background-image: url("../../img/back-screen.png"), url("../../img/back-desktop.jpg");
+    filter: drop-shadow(0 4px 4px rgba($black, 0.25));
+  }
 }
 
 .about__wrapper {
   width: 100%;
-  padding: 29px 0;
+  padding-top: 90px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
-    padding-top: 102px;
+    padding-top: 210px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 114px;
+    padding-top: 225px;
   }
 }
 
 .about__slogan {
   color: $white;
-  margin: 0;
+  width: 280px;
 
   @media (max-width: $tablet-width-only) {
+    width: 240px;
     line-height: 120%;
   }
 }
