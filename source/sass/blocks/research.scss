@@ -8,9 +8,30 @@
 
 .research__wrapper {
   padding: 54px 0;
+  display: grid;
+  grid-template-columns: 238px 1fr;
+  column-gap: 72px;
+  align-items: end;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 238px;
+    height: 276px;
+    background-image: url("../../img/stats.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   @media (min-width: $desktop-width) {
-    padding: 115px 0;
+    padding: 67px 0;
+    grid-template-columns: 298px 1fr;
+    align-items: center;
+
+    &::before {
+      width: 298px;
+      height: 345px;
+    }
   }
 }
 
@@ -20,6 +41,12 @@
   line-height: 36px;
   margin: 0;
   margin-bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .research__text {

@@ -1,17 +1,23 @@
 .plans {
-  background-color: $white-smoke;
+  // background-color: $white-smoke;
+  background-image: url("../../img/grey-background.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 
 .plans__wrapper {
-  padding-top: 83px;
+  padding-top: 128px;
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    padding: 70px 0;
+    padding-top: 117px;
+    padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 98px 0;
+    padding-top: 200px;
+    padding-bottom: 98px;
   }
 }
 
@@ -30,6 +36,11 @@
   margin-top: auto;
 
   @include hidden-on-mobile;
+
+  @media (min-width: $tablet-width) {
+    border-top: 2px solid $whisper;
+    border-left: 2px solid $whisper;
+  }
 }
 
 .plans__item {
@@ -45,6 +56,7 @@
 .plans__header {
   background-color: $midnight;
   border: 2px solid $midnight;
+  border-top: none;
   text-align: center;
   padding: 19px;
   padding-bottom: 35px;
@@ -73,6 +85,10 @@
   border-bottom: 2px solid $whisper;
   margin: 0;
   padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    border-right: 2px solid $whisper;
+  }
 }
 
 .plans__feature-name {
@@ -81,6 +97,32 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.plans__item--recommend {
+  @media (min-width: $tablet-width) {
+    .plans__header {
+      border-left: 2px solid $white-smoke;
+      border-right: 2px solid $white-smoke;
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: "Хит";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 105px;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        background-color: $cerise;
+        transform: rotate(-45deg) translate(-26px, -13px);
+      }
+    }
   }
 }
 
