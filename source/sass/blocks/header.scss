@@ -18,12 +18,14 @@
 
 .header__wrapper {
   min-width: 280px;
-  padding: 0 20px;
+  padding: 0 6%;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    min-width: 620px;
+    max-width: 940px;
+    padding: 0 3%;
+    margin: 0 auto;
   }
 
   @media (max-width: $tablet-width-only) {
