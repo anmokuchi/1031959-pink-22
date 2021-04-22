@@ -1,55 +1,113 @@
 .about {
   $about-shift: -66px;
 
-  height: 733px;
+  max-height: 1000px;
   background-color: $midnight;
-  background-image: url("../../img/back-screen.png"), url("../../img/back-tablet.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: 95% 176px, center top;
-  background-size: auto 300px, auto 66%;
+  background-image: url("../../img/back-tablet.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto 66%;
   position: relative;
   top: $about-shift;
   margin-bottom: $about-shift;
-  display: grid;
-  grid-template-rows: 1fr min-content;
 
   @media (min-width: $tablet-width) {
     $about-shift: -110px;
 
-    height: 729px;
-    background-size: auto 545px, cover;
-    background-position: bottom;
+    min-height: 600px;
+    background-size: cover;
     top: $about-shift;
     margin-bottom: $about-shift;
   }
 
   @media (min-width: $desktop-width) {
-    height: 853px;
-    background-image: url("../../img/back-screen.png"), url("../../img/back-desktop.jpg");
+    background-image: url("../../img/back-desktop.jpg");
     filter: drop-shadow(0 4px 4px rgba($black, 0.25));
   }
 }
 
+.about__container {
+  @media (min-width: $tablet-width) {
+    max-width: 800px;
+    padding: 0 3%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    max-width: 940px;
+    padding: 0;
+  }
+}
+
 .about__wrapper {
-  width: 100%;
   padding-top: 90px;
+  display: grid;
+  grid-template-rows: 1fr min-content min-content;
+  justify-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
     padding-top: 210px;
+    grid-template-rows: 1fr min-content;
+    grid-template-columns: 300px 1fr;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 225px;
   }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 286px;
+    background-image: url("../../img/back-screen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 100%;
+    margin-top: 25px;
+    grid-row-start: 2;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      height: 545px;
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-position-x: center;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 645px;
+      background-position-x: left;
+    }
+  }
+}
+
+.about__title {
+  @media (min-width: $tablet-width) {
+    z-index: 10;
+    width: 240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .about__slogan {
   color: $white;
-  width: 280px;
 
   @media (max-width: $tablet-width-only) {
-    width: 240px;
     line-height: 120%;
+  }
+}
+
+.about__download {
+  @media (min-width: $tablet-width) {
+    z-index: 10;
+    grid-column-start: 1;
   }
 }
