@@ -1,12 +1,13 @@
 .footer__wrapper {
   padding: 40px 0;
   display: grid;
-  grid-gap: 39px;
+  row-gap: 39px;
   justify-items: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
