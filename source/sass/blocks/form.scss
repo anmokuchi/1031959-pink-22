@@ -186,10 +186,10 @@
   @media (min-width: $desktop-width) {
     font-size: 14px;
   }
+}
 
-  &--desktop-visible {
-    @include hidden-on-tablet;
-  }
+.form__clarify-hidden {
+  @include hidden-on-tablet;
 }
 
 .form__clarify-mark {
