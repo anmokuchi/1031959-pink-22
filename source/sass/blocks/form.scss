@@ -154,6 +154,20 @@
   border-radius: 3px;
   padding: 14px;
 
+  &:hover {
+    background-color: $eucalyptus;
+    border-color: $eucalyptus;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $whisper;
+    border-color: $whisper;
+  }
+
   @media (min-width: $tablet-width) {
     width: 300px;
   }

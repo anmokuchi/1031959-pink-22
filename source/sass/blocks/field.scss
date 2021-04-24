@@ -52,6 +52,15 @@
   padding: 15px 20px;
   box-sizing: border-box;
 
+  &:hover {
+    border-color: $midnight;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $cerise;
+  }
+
   &::placeholder {
     color: $midnight;
   }
@@ -75,6 +84,26 @@
     border: 2px solid $whisper;
     border-radius: 3px;
     margin-right: 20px;
+  }
+
+  &:hover {
+    &::before {
+      border-color: $midnight;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $cerise;
+    }
+  }
+}
+
+.field__checkbox:checked + .field__text {
+  &::before {
+    background-image: url("../../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -100,5 +129,43 @@
     border: 2px solid $whisper;
     border-radius: 50%;
     margin-right: 20px;
+  }
+
+  &:hover {
+    &::before {
+      border-color: $midnight;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $cerise;
+    }
+  }
+}
+
+.field__radio:checked + .field__text {
+  &::before {
+    background-image: url("../../img/radio.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.field__phone {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/phone-icon.svg"), linear-gradient(to left, $whisper 59px, $white 59px);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 19px) center, center;
+    padding-right: 79px;
+  }
+}
+
+.field__email {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/mail-icon.svg"), linear-gradient(to left, $whisper 59px, $white 59px);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center, center;
+    padding-right: 79px;
   }
 }
