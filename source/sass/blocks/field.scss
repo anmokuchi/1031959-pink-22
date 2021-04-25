@@ -146,9 +146,8 @@
 
 .field__radio:checked + .field__text {
   &::before {
-    background-image: url("../img/radio.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: $cerise;
+    box-shadow: inset 0 0 0 11px $white;
   }
 }
 
