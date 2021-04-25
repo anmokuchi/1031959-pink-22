@@ -2,7 +2,7 @@
   $about-shift: -66px;
 
   background-color: $midnight;
-  background-image: url("../../img/back-tablet.jpg");
+  background-image: url("../img/back-tablet.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: auto 200%;
@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/back-desktop.jpg");
+    background-image: url("../img/back-desktop.jpg");
     background-size: auto 230%;
     padding-top: 168px;
     padding-bottom: 80px;
