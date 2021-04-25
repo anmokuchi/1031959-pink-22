@@ -1,66 +1,171 @@
 .field {
-  border: none;
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
 
-  @media (min-width: $tablet-width) {
-    border: 2px solid $whisper;
-    border-radius: 3px;
-    padding: 47px 60px 53px;
+  &--column {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      column-gap: 20px;
+      align-items: center;
+
+      .field__text--pink {
+        padding: 0;
+      }
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    grid-column-start: 1;
-    grid-column-end: 3;
+  &--reverse {
+    @media (min-width: $tablet-width) {
+      flex-direction: column-reverse;
+
+      .field__text--pink {
+        padding-bottom: 0;
+        padding-top: 10px;
+      }
+    }
   }
 }
 
-.field__legend {
-  color: $cerise;
-  line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-
-  @media (max-width: $mobile-width-only) {
-    margin-bottom: 22px;
-  }
-}
-
-.field__label {
+.field__text {
   font-size: 18px;
   line-height: 30px;
   cursor: pointer;
-}
 
-.field__label--pink {
-  color: $cerise;
-  font-size: 14px;
-  text-transform: uppercase;
+  &--pink {
+    color: $cerise;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 23px;
+    padding-bottom: 5px;
+  }
 }
 
 .field__input {
+  width: 100%;
   color: $midnight;
   font-family: inherit;
   font-size: 18px;
   line-height: 30px;
   border: 2px solid $whisper;
   border-radius: 3px;
-  padding: 23px 20px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: $midnight;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $cerise;
+  }
 
   &::placeholder {
     color: $midnight;
   }
 }
 
-.field--grey-bg {
-  @media (max-width: $mobile-width-only) {
-    background-color: $white-smoke;
-    padding: 20px 0 42px;
+.field__checkbox {
+  @include visually-hidden;
+}
 
-    @include container-reset;
+.field__checkbox + .field__text {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: $white;
+    border: 2px solid $whisper;
+    border-radius: 3px;
+    margin-right: 20px;
+  }
+
+  &:hover {
+    &::before {
+      border-color: $midnight;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $cerise;
+    }
   }
 }
 
-.field__legend--mobile-hidden {
-  @include hidden-on-mobile;
+.field__checkbox:checked + .field__text {
+  &::before {
+    background-image: url("../../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.field__radio {
+  @include visually-hidden;
+}
+
+.field__radio + .field__text {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 3px 10px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 37px;
+    height: 37px;
+    background-color: $white;
+    border: 2px solid $whisper;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  &:hover {
+    &::before {
+      border-color: $midnight;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $cerise;
+    }
+  }
+}
+
+.field__radio:checked + .field__text {
+  &::before {
+    background-image: url("../../img/radio.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.field__phone {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/phone-icon.svg"), linear-gradient(to left, $whisper 59px, $white 59px);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 19px) center, center;
+    padding-right: 79px;
+  }
+}
+
+.field__email {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/mail-icon.svg"), linear-gradient(to left, $whisper 59px, $white 59px);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center, center;
+    padding-right: 79px;
+  }
 }

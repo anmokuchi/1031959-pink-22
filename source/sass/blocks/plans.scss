@@ -36,14 +36,14 @@
   margin-top: auto;
 
   @include hidden-on-mobile;
-
-  @media (min-width: $tablet-width) {
-    border-top: 2px solid $whisper;
-    border-left: 2px solid $whisper;
-  }
 }
 
 .plans__item {
+  &:nth-of-type(3) {
+    border-left: 2px solid $white-smoke;
+    border-right: 2px solid $white-smoke;
+  }
+
   @media (max-width: $mobile-width-only) {
     min-width: 276px;
   }
@@ -55,11 +55,11 @@
 
 .plans__header {
   background-color: $midnight;
-  border: 2px solid $midnight;
   border-top: none;
   text-align: center;
   padding: 19px;
   padding-bottom: 35px;
+  position: relative;
 }
 
 .plans__title {
@@ -82,13 +82,9 @@
 
 .plans__feature {
   background-color: $white;
-  border-bottom: 2px solid $whisper;
-  margin: 0;
-  padding: 20px;
-
-  @media (min-width: $tablet-width) {
-    border-right: 2px solid $whisper;
-  }
+  border: 2px solid $whisper;
+  margin: -2px -2px 0 -2px;
+  padding: 22px 22px 20px 22px;
 }
 
 .plans__feature-name {
@@ -101,27 +97,22 @@
 }
 
 .plans__item--recommend {
-  @media (min-width: $tablet-width) {
-    .plans__header {
-      border-left: 2px solid $white-smoke;
-      border-right: 2px solid $white-smoke;
-      position: relative;
-      overflow: hidden;
+  .plans__header {
+    overflow: hidden;
 
-      &::before {
-        content: "Хит";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 105px;
-        font-size: 14px;
-        line-height: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: $white;
-        background-color: $cerise;
-        transform: rotate(-45deg) translate(-26px, -13px);
-      }
+    &::before {
+      content: "Хит";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 105px;
+      font-size: 14px;
+      line-height: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      color: $white;
+      background-color: $cerise;
+      transform: rotate(-45deg) translate(-26px, -13px);
     }
   }
 }

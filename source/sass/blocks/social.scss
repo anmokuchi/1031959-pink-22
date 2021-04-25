@@ -1,12 +1,13 @@
 .social__list {
   @include list-reset;
   display: flex;
+  max-width: 300px;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-right: -8px;
 }
 
 .social__item {
-  margin-right: 8px;
+  margin: 4px;
 }
 
 .social__link {
