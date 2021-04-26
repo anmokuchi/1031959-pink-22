@@ -4,6 +4,11 @@
   padding: 36px 20px 0;
   min-width: 240px;
 
+  @media (min-width: $tablet-width) {
+    padding: 36px 18px 0 28px;
+    min-width: 202px;
+  }
+
   &--crop {
     .effect-level__pin {
       left: 75%;

@@ -40,6 +40,19 @@
   display: grid;
   row-gap: 40px;
   justify-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 300px auto;
+    column-gap: 45px;
+    row-gap: 67px;
+  }
+}
+
+.img-upload__preview {
+  @media (min-width: $tablet-width) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
 
 .img-upload__preview-img {
@@ -50,11 +63,19 @@
   display: grid;
   row-gap: 12px;
   justify-items: center;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 24px;
+  }
 }
 
 .img-upload__button {
   padding: 15px;
   max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 260px;
+  }
 
   &--submit {
     color: $cerise;
