@@ -9,6 +9,11 @@
     min-width: 202px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 36px 30px 0 44px;
+    min-width: 288px;
+  }
+
   &--crop {
     .effect-level__pin {
       left: 75%;
@@ -49,4 +54,8 @@
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
+
+  &:active {
+    background-color: $cerise;
+  }
 }
