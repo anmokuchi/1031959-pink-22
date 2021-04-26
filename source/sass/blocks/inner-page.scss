@@ -52,8 +52,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 85px;
-    padding-right: 85px;
+    padding: 80px 85px;
+    padding-top: 90px;
+  }
+
+  br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: initial;
+    }
   }
 }
 

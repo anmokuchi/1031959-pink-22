@@ -3,12 +3,13 @@
 }
 
 .post__wrapper {
-  padding: 25px 10px 25px 17px;
+  padding: 18px 10px;
+  padding-left: 17px;
 }
 
 .post__info {
   margin: 0;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .post__author {
@@ -22,7 +23,7 @@
 
 .post__content {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 11px;
 }
 
 .post__like {
@@ -30,5 +31,19 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
+  display: grid;
+  grid-template-columns: min-content max-content;
+  column-gap: 18px;
+  align-items: center;
+}
+
+.post__like-icon {
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
 }

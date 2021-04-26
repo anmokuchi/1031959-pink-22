@@ -1,8 +1,68 @@
 .effects {
   padding: 0;
+  margin: 0;
   border: none;
+}
+
+.effects__wrapper {
+  padding-top: 2px;
+}
+
+.effects__toggles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+}
+
+.effects__toggle {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 18px;
+  cursor: pointer;
+
+  &:hover {
+    .effects__icon path {
+      fill: rgba($midnight, 0.5);
+    }
+  }
+
+  &--active {
+    @media (max-width: $mobile-width-only) {
+      .effects__icon path {
+        fill: $cerise;
+      }
+    }
+  }
+}
+
+.effects__icon path {
+  @media (max-width: $mobile-width-only) {
+    fill: rgba($midnight, 0.3);
+  }
 }
 
 .effects__list {
   @include list-reset;
+}
+
+.effects__item {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+
+    &--active {
+      display: list-item;
+    }
+  }
+
+  &::after {
+    content: "";
+    height: 1px;
+    background-color: rgba($midnight, 0.1);
+    display: block;
+
+    @include container-reset;
+  }
 }

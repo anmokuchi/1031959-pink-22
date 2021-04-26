@@ -1,0 +1,47 @@
+.effect-level {
+  position: relative;
+  height: 34px;
+  padding: 36px 20px 0;
+  min-width: 240px;
+
+  &--crop {
+    .effect-level__pin {
+      left: 75%;
+    }
+  }
+
+  &--fill {
+    .effect-level__pin {
+      left: 20%;
+    }
+  }
+
+  &--contrast {
+    .effect-level__pin {
+      left: 50%;
+    }
+  }
+}
+
+.effect-level__value {
+  display: none;
+}
+
+.effect-level__line {
+  height: 2px;
+  font-size: 0;
+  background-color: $midnight;
+}
+
+.effect-level__pin {
+  position: absolute;
+  top: 30px;
+  left: 14px;
+  width: 14px;
+  height: 14px;
+  background-color: $white;
+  border: 2px solid $cerise;
+  border-radius: 50%;
+  box-sizing: border-box;
+  cursor: pointer;
+}

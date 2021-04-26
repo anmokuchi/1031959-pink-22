@@ -146,7 +146,7 @@
 
 .field__radio:checked + .field__text {
   &::before {
-    background-color: $cerise;
+    background: radial-gradient(closest-side, $cerise 7px, $white 8px);
     box-shadow: inset 0 0 0 11px $white;
   }
 }
