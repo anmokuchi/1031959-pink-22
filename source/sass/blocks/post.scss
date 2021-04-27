@@ -1,14 +1,85 @@
+.post {
+  font-size: 14px;
+  line-height: 24px;
+
+  &--of-the-day {
+    position: relative;
+
+    &::before {
+      content: "Панорама дня";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: $cerise;
+      color: $white;
+      font-weight: bold;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 6px 20px;
+
+      @media (min-width: $tablet-width) {
+        top: 57px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 54px;
+      }
+    }
+
+    .post__wrapper {
+      @media (min-width: $tablet-width) {
+        min-height: auto;
+        grid-template-columns: auto min-content;
+      }
+    }
+
+    .post__info {
+      @media (min-width: $tablet-width) {
+        order: -2;
+      }
+    }
+
+    .post__content {
+      @media (min-width: $tablet-width) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+
+    .post__like {
+      @media (min-width: $tablet-width) {
+        order: -1;
+        column-gap: 16px;
+      }
+    }
+  }
+}
+
 .post__preview {
   vertical-align: bottom;
 }
 
 .post__wrapper {
-  padding: 25px 10px 25px 17px;
+  padding: 18px 10px;
+  padding-left: 17px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 155px;
+    padding: 25px 30px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 27px;
+  }
 }
 
 .post__info {
   margin: 0;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .post__author {
@@ -22,7 +93,11 @@
 
 .post__content {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .post__like {
@@ -30,5 +105,30 @@
   font-size: 12px;
   line-height: 24px;
   text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
+  display: grid;
+  grid-template-columns: min-content max-content;
+  column-gap: 18px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    line-height: 1;
+    grid-template-columns: max-content min-content;
+    column-gap: initial;
+    justify-content: space-between;
+  }
+}
+
+.post__like-icon {
+  width: 13px;
+  height: 12px;
+  background-image: url("../img/heart.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }

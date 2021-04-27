@@ -31,7 +31,7 @@
 
 .advantages__bottom-wrapper {
   // background-color: $white-smoke;
-  background-image: url("../../img/grey-background.svg");
+  background-image: url("../img/grey-background.svg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -52,7 +52,7 @@
     content: "";
     width: 157px;
     height: 277px;
-    background-image: url("../../img/advantage-tablet.png");
+    background-image: url("../img/advantage-tablet.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -111,7 +111,7 @@
 
     &::before {
       @media (min-width: $desktop-width) {
-        background-image: url("../../img/shadow.png"), url("../../img/advantage-1.png");
+        background-image: url("../img/shadow.png"), url("../img/advantage-1.png");
       }
     }
   }
@@ -127,7 +127,7 @@
 
     &::before {
       @media (min-width: $desktop-width) {
-        background-image: url("../../img/shadow.png"), url("../../img/advantage-2.png");
+        background-image: url("../img/shadow.png"), url("../img/advantage-2.png");
       }
     }
   }
@@ -143,7 +143,7 @@
 
     &::before {
       @media (min-width: $desktop-width) {
-        background-image: url("../../img/shadow.png"), url("../../img/advantage-3.png");
+        background-image: url("../img/shadow.png"), url("../img/advantage-3.png");
       }
     }
   }
