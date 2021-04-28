@@ -85,3 +85,36 @@
     grid-column-end: 3;
   }
 }
+
+.contacts__map {
+  height: 200px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+    background-color: $white;
+    clip-path: polygon(100% 0, 50% 100%, 0 0);
+    z-index: 1;
+
+    @media (min-width: $tablet-width) {
+      height: 67px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 100px;
+    }
+  }
+}
