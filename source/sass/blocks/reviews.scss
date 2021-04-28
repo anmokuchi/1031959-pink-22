@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 72px;
+    position: relative;
   }
 }
 
@@ -24,14 +25,23 @@
       background-repeat: no-repeat;
       margin: 0 auto;
       margin-bottom: 58px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/quotes@2x.png");
+        background-size: cover;
+      }
     }
   }
 }
 
 .reviews__item {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  display: none;
+
+  &--active {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .reviews__author-info {
@@ -61,7 +71,7 @@
 .reviews__text {
   line-height: 30px;
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 35px;
 
   @media (min-width: $desktop-width) {
     padding: 0 126px;
@@ -69,16 +79,17 @@
 }
 
 .reviews__controls {
-  display: none;
+  @include hidden-on-tablet;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    position: absolute;
+    top: 213px;
+    width: 100%;
   }
 }
 
 .reviews__toggles {
-  text-align: center;
-  margin: 0;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
