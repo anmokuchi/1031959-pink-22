@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <link href="img/favicon.svg" type="image/svg+xml" rel="shortcut icon">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="body">
-    <header class="header">
+    <header class="header header--menu-opened">
       <div class="header__container">
-        <div class="header__wrapper header__wrapper--opened">
+        <div class="header__wrapper">
           <a class="header__logo">
             <!-- <img class="header__logo-image" src="img/header-logo-mobile.svg" width="74" height="23" alt="Приложение «Пинк»"> -->
             <svg class="header__logo-image" viewBox="0 0 74 23" width="74" height="23" aria-label="Приложение «Пинк»">
@@ -121,7 +123,7 @@
           <div class="reviews__wrapper slider">
             <h2 class="visually-hidden">Отзывы о нас</h2>
             <ul class="reviews__list slider__list">
-              <li class="reviews__item slider__item slider__item--active">
+              <li class="reviews__item reviews__item--active slider__item slider__item--active">
                 <div class="reviews__author-info">
                   <strong class="reviews__author-name">Николай Петров</strong>
                   <span class="reviews__author-age">25 лет, водитель трамвая</span>
@@ -144,13 +146,13 @@
               </li>
             </ul>
             <p class="reviews__controls slider__controls">
-              <button class="reviews__prev slider__prev" type="button">Предыдущий отзыв</button>
-              <button class="reviews__next slider__next" type="button">Следующий отзыв</button>
+              <button class="slider__control slider__control--prev" type="button" aria-label="Предыдущий отзыв"></button>
+              <button class="slider__control slider__control--next" type="button" aria-label="Следующий отзыв"></button>
             </p>
             <p class="reviews__toggles slider__toggles">
-              <button class="slider__toggle slider__toggle--current" type="button">1</button>
-              <button class="slider__toggle" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+              <button class="slider__toggle slider__toggle--current" type="button" aria-label="1"></button>
+              <button class="slider__toggle" type="button" aria-label="2"></button>
+              <button class="slider__toggle" type="button" aria-label="3"></button>
             </p>
           </div>
         </div>
@@ -221,9 +223,9 @@
               </li>
             </ul>
             <p class="plans__toggles slider__toggles">
-              <button class="slider__toggle" type="button">1</button>
-              <button class="slider__toggle slider__toggle--current" type="button">2</button>
-              <button class="slider__toggle" type="button">3</button>
+              <button class="slider__toggle" type="button" aria-label="1"></button>
+              <button class="slider__toggle slider__toggle--current" type="button" aria-label="2"></button>
+              <button class="slider__toggle" type="button" aria-label="3"></button>
             </p>
           </div>
         </div>
@@ -260,7 +262,8 @@
           </div>
         </div>
         <div class="contacts__map">
-          <img class="contacts__map-image" src="img/map-mobile.png" width="320" height="200" alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa1a9c70309ffb23f0c3a462957b97d571ff103b023f4eaa8df7ef662efb8aefb&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+          <!-- <img class="contacts__map-image" src="img/map-mobile.png" width="320" height="200" alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"> -->
         </div>
       </section>
     </main>

@@ -21,6 +21,10 @@
     background-image: url("../img/stats.png");
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/stats@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {

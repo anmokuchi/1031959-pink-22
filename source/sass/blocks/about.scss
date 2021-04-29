@@ -6,10 +6,14 @@
   background-image: url("../img/back-tablet.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: auto 66%;
+  background-size: auto 462px;
   position: relative;
   top: $about-shift;
   margin-bottom: $about-shift;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-tablet@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     $about-shift: -110px;
@@ -23,6 +27,10 @@
   @media (min-width: $desktop-width) {
     background-image: url("../img/back-desktop.jpg");
     filter: drop-shadow(0 4px 4px rgba($black, 0.25));
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -67,6 +75,10 @@
     background-position-x: 100%;
     margin-top: 25px;
     grid-row-start: 2;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-screen@2x.png");
+    }
 
     @media (min-width: $tablet-width) {
       width: 100%;

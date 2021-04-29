@@ -3,6 +3,12 @@
   color: $white;
   position: relative;
   z-index: 10;
+
+  @media (max-width: $tablet-width-only) {
+    &--menu-opened {
+      background-color: $midnight;
+    }
+  }
 }
 
 .header__container {
@@ -26,13 +32,6 @@
     max-width: 940px;
     padding: 0 3%;
     margin: 0 auto;
-  }
-
-  @media (max-width: $tablet-width-only) {
-    &--opened {
-      background-color: $midnight;
-      border-bottom: 1px solid $black;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -113,7 +112,7 @@
       content: "";
       position: absolute;
       right: 0;
-      width: 23px;
+      width: 30px;
       height: 3px;
       background-color: $white;
     }
