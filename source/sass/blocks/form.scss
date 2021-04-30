@@ -154,7 +154,8 @@
   border-radius: 3px;
   padding: 14px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $eucalyptus;
     border-color: $eucalyptus;
   }

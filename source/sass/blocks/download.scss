@@ -31,7 +31,8 @@
   border-color: $white;
   margin-bottom: 20px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $cerise;
     background-color: $white;
   }
