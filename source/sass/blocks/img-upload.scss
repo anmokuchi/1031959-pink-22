@@ -42,7 +42,7 @@
   justify-items: center;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 300px auto;
+    grid-template-columns: auto auto;
     column-gap: 45px;
     row-gap: initial;
   }
@@ -53,6 +53,8 @@
 }
 
 .img-upload__preview {
+  max-width: 400px;
+
   @media (min-width: $tablet-width) {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -60,7 +62,7 @@
 }
 
 .img-upload__preview-img {
-  vertical-align: bottom;
+  display: block;
 }
 
 .img-upload__controls {
