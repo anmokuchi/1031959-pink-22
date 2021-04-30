@@ -34,7 +34,8 @@
   margin: 0 18px;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     .effects__icon path {
       fill: rgba($midnight, 0.5);
     }

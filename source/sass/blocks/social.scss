@@ -31,7 +31,8 @@
     background-image: url("../img/youtube.svg");
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-color: $midnight;
   }
 

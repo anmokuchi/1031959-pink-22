@@ -23,7 +23,8 @@
     background-image: url("../img/arrow-right.svg");
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 

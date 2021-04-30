@@ -95,7 +95,8 @@
     color: $cerise;
     border-color: $cerise;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $white;
       background-color: $cerise;
     }
@@ -109,7 +110,8 @@
     color: rgba($midnight, 0.1);
     border-color: rgba($midnight, 0.1);
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: rgba($midnight, 0.3);
       border-color: rgba($midnight, 0.3);
     }

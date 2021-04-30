@@ -60,7 +60,8 @@
   display: block;
   padding: 16px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $cerise;
   }
 
