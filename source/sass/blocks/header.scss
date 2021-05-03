@@ -24,12 +24,15 @@
 
 .header__wrapper {
   min-width: 280px;
+  height: 66px;
   padding: 0 6%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     max-width: 940px;
+    height: 110px;
     padding: 0 3%;
     margin: 0 auto;
   }
@@ -40,34 +43,55 @@
 }
 
 .header__logo {
-  height: 66px;
+  &:hover,
+  &:focus {
+    color: $cerise;
+  }
 
-  @media (min-width: $tablet-width) {
-    height: 110px;
+  &:active {
+    color: $white;
+    opacity: 0.3;
   }
 }
 
 .header__logo-image {
+  display: block;
   width: 74px;
-  height: 66px;
 
   @media (min-width: $tablet-width) {
     width: 145px;
-    height: 110px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
     width: 147px;
   }
-}
 
-.header__logo:hover:not(:active) .header__logo-image path,
-.header__logo:focus:not(:active) .header__logo-image path {
-  fill: $cerise;
-}
+  &--mobile {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
-.header__logo:active .header__logo-image path {
-  opacity: 0.3;
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 }
 
 .header__menu-toggle {
