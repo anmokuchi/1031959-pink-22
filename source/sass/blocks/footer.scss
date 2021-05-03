@@ -11,3 +11,40 @@
     align-items: center;
   }
 }
+
+.footer__logo {
+  color: $midnight;
+
+  &:hover,
+  &:focus {
+    color: $cerise;
+  }
+
+  &:active {
+    color: $midnight;
+    opacity: 0.3;
+  }
+}
+
+.footer__logo-image {
+  display: block;
+  width: 145px;
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
+
+  &--mobile {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}

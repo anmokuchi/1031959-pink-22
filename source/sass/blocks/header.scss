@@ -43,6 +43,8 @@
 }
 
 .header__logo {
+  color: $white;
+
   &:hover,
   &:focus {
     color: $cerise;

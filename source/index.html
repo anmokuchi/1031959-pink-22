@@ -272,8 +272,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <a class="footer__logo">
-            <img class="footer__logo-image" src="img/footer-logo-mobile.svg" width="145" height="40" alt="Приложение «Пинк»">
+          <a class="footer__logo" aria-label="Логотип приложения «Пинк»">
+            <svg class="footer__logo-image footer__logo-image--mobile" width="145" height="40">
+              <use xlink:href="img/logo-adaptive.svg#footer-logo-mobile"></use>
+            </svg>
+            <svg class="footer__logo-image footer__logo-image--desktop" width="147" height="40">
+              <use xlink:href="img/logo-adaptive.svg#footer-logo-desktop"></use>
+            </svg>
           </a>
           <div class="footer__social social">
             <ul class="social__list">
