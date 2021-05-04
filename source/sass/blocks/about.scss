@@ -55,13 +55,13 @@
   justify-items: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 210px;
+    padding-top: 205px;
     grid-template-columns: 300px 1fr;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 225px;
+    padding-top: 210px;
   }
 
   &::after {
@@ -71,9 +71,9 @@
     height: 286px;
     background-image: url("../img/back-screen.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: 100%;
-    margin-top: 25px;
+    background-size: auto 110%;
+    background-position-x: 91%;
+    margin-top: 30px;
     grid-row-start: 2;
 
     @media (min-resolution: 2dppx) {
@@ -87,12 +87,13 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      background-position-x: center;
+      background-position-x: 49%;
+      background-size: cover;
     }
 
     @media (min-width: $desktop-width) {
       height: 645px;
-      background-position-x: left;
+      background-position-x: -15%;
     }
   }
 }

@@ -8,6 +8,10 @@
 
 .social__item {
   margin: 4px;
+
+  @media (min-width: $desktop-width) {
+    margin: 3px;
+  }
 }
 
 .social__link {

@@ -3,10 +3,27 @@
   grid-template-columns: 1fr 27px;
   column-gap: 15px;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    column-gap: 14px;
+  }
 }
 
 .copyright__text {
   line-height: 18px;
+}
+
+.copyright__logo {
+  color: $cerise;
+
+  &:hover,
+  &:focus {
+    color: $midnight;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__logo-image {

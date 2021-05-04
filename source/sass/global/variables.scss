@@ -42,6 +42,12 @@ $desktop-width: 1200px;
   }
 }
 
+@mixin hidden-on-desktop {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 @mixin visually-hidden {
   position: absolute;
   width: 1px;

@@ -13,31 +13,31 @@
     clip-path: polygon(100% 0, 0 100%, 0 0);
 
     @media (min-width: $tablet-width) {
-      height: 38px;
+      height: 41px;
     }
 
     @media (min-width: $desktop-width) {
-      height: 100px;
+      height: 140px;
     }
   }
 }
 
 .plans__wrapper {
-  padding-top: 100px;
-  padding-bottom: 49px;
+  padding-top: 102px;
+  padding-bottom: 40px;
 
   @media (max-width: $mobile-width-only) {
     @include container-reset;
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 117px;
-    padding-bottom: 70px;
+    padding-top: 98px;
+    padding-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 200px;
-    padding-bottom: 98px;
+    padding-top: 177px;
+    padding-bottom: 96px;
   }
 }
 
@@ -55,6 +55,12 @@
   margin-top: auto;
 
   @include hidden-on-mobile;
+
+  .plans__feature {
+    @media (min-width: $tablet-width) {
+      justify-content: flex-start;
+    }
+  }
 }
 
 .plans__item {
@@ -63,12 +69,35 @@
     border-right: 2px solid $white-smoke;
   }
 
+  &:first-of-type {
+    .plans__feature {
+      &:last-of-type {
+        border-bottom-left-radius: 3px;
+      }
+
+      @media (min-width: $tablet-width) {
+        &:first-of-type {
+          border-top-left-radius: 3px;
+        }
+      }
+    }
+  }
+
+  &:last-of-type {
+    .plans__feature {
+      &:last-of-type {
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+
   @media (max-width: $mobile-width-only) {
     min-width: 276px;
   }
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+    flex-basis: 152px;
   }
 }
 
@@ -76,9 +105,26 @@
   background-color: $midnight;
   border-top: none;
   text-align: center;
-  padding: 19px;
-  padding-bottom: 35px;
+  padding: 12px;
+  padding-bottom: 29px;
   position: relative;
+
+  &--left-radius {
+    border-top-left-radius: 3px;
+  }
+
+  &--right-radius {
+    border-top-right-radius: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 16px;
+    padding-bottom: 21px;
+  }
 }
 
 .plans__title {
@@ -88,6 +134,10 @@
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .plans__price {
@@ -97,13 +147,34 @@
   line-height: 30px;
   text-transform: uppercase;
   margin: 0;
+  margin-top: -3px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    margin-top: 1px;
+  }
 }
 
 .plans__feature {
   background-color: $white;
   border: 2px solid $whisper;
   margin: -2px -2px 0 -2px;
-  padding: 22px 22px 20px 22px;
+  padding: 14px 17px 15px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    min-height: 27px;
+    padding: 9px 17px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 30px;
+    padding: 14px 22px;
+    padding-bottom: 15px;
+  }
 }
 
 .plans__feature-name {
@@ -112,6 +183,24 @@
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.plans__feature-availability {
+  font-size: 0;
+  display: block;
+  background-repeat: no-repeat;
+
+  &--available {
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/yes.svg");
+  }
+
+  &--not-available {
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/no.svg");
   }
 }
 
@@ -124,14 +213,24 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 105px;
+      width: 110px;
       font-size: 14px;
-      line-height: 30px;
+      line-height: 24px;
       text-align: center;
       text-transform: uppercase;
       color: $white;
       background-color: $cerise;
-      transform: rotate(-45deg) translate(-26px, -13px);
+      transform: rotate(-45deg) translate(-32px, -7px);
+
+      @media (min-width: $tablet-width) {
+        line-height: 19px;
+        transform: rotate(-45deg) translate(-35px, -13px);
+      }
+
+      @media (min-width: $desktop-width) {
+        line-height: 24px;
+        transform: rotate(-45deg) translate(-31px, -6px);
+      }
     }
   }
 }
@@ -139,7 +238,7 @@
 .plans__toggles {
   text-align: center;
   margin: 0;
-  margin-top: 45px;
+  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
     display: none;
