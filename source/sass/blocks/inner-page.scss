@@ -36,6 +36,18 @@
       background-image: url("../img/back-desktop@2x.jpg");
     }
   }
+
+  &--wide {
+    padding-bottom: 77px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 128px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 89px;
+    }
+  }
 }
 
 .inner-page__title {
@@ -49,6 +61,13 @@
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 68px;
+  }
+
+  &--narrow {
+    @media (min-width: $desktop-width) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -73,6 +92,19 @@
 
     @media (min-width: $desktop-width) {
       display: initial;
+    }
+  }
+
+  &--wide {
+    padding-bottom: 50px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 91px;
+      padding-bottom: 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 89px;
     }
   }
 }

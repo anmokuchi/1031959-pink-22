@@ -1,28 +1,28 @@
 .effect-level {
   position: relative;
-  height: 34px;
-  padding: 36px 20px 0;
+  height: 36px;
+  padding: 35px 20px 0;
   min-width: 240px;
 
   @media (min-width: $tablet-width) {
-    padding: 36px 18px 0 28px;
+    padding: 34px 18px 0 28px;
     min-width: 202px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 36px 30px 0 44px;
+    padding: 35px 30px 0 44px;
     min-width: 288px;
   }
 
   &--crop {
     .effect-level__pin {
-      left: 75%;
+      left: 76%;
     }
   }
 
   &--fill {
     .effect-level__pin {
-      left: 20%;
+      left: 21%;
     }
   }
 
