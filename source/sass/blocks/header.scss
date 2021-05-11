@@ -4,6 +4,16 @@
   position: relative;
   z-index: 10;
 
+  &--menu-opened {
+    .header__wrapper {
+      height: 69px;
+
+      @media (min-width: $tablet-width) {
+        height: 109px;
+      }
+    }
+  }
+
   @media (max-width: $tablet-width-only) {
     &--menu-opened {
       background-color: $midnight;
@@ -104,6 +114,15 @@
   border: none;
   padding: 0;
   cursor: pointer;
+
+  &--opened {
+    margin-right: -2px;
+    margin-top: -3px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: -3px;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
