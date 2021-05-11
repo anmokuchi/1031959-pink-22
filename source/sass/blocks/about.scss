@@ -26,7 +26,6 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/back-desktop.jpg");
-    filter: drop-shadow(0 4px 4px rgba($black, 0.25));
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
