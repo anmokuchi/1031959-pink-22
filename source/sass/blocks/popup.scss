@@ -1,4 +1,5 @@
 .popup {
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -49,6 +50,10 @@
         width: 300px;
       }
     }
+  }
+
+  &--active {
+    display: block;
   }
 }
 
@@ -115,7 +120,7 @@
   }
 }
 
-.popup__button {
+.popup__close {
   width: 100%;
   color: $white;
   line-height: 30px;
