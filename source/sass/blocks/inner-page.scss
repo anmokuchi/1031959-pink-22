@@ -51,22 +51,27 @@
 }
 
 .inner-page__title {
+  max-width: 250px;
   color: $white;
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    max-width: 500px;
     font-size: 50px;
     line-height: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: none;
   }
 
   &--narrow {
     @media (min-width: $desktop-width) {
       max-width: 600px;
-      margin: 0 auto;
     }
   }
 }
