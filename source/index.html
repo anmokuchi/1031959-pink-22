@@ -6,7 +6,7 @@
     <title>HTML Academy: Пинк</title>
     <link href="img/favicon.ico" rel="shortcut icon">
     <link href="img/favicon.svg" type="image/svg+xml" rel="shortcut icon">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="body">
     <header class="header header--menu-opened">
@@ -14,13 +14,13 @@
         <div class="header__wrapper">
           <a class="header__logo" aria-label="Логотип приложения «Пинк»">
             <svg class="header__logo-image header__logo-image--mobile" width="74" height="23">
-              <use xlink:href="img/logo-adaptive.svg#header-logo-mobile"></use>
+              <use xlink:href="img/sprite.svg#header-logo-mobile"></use>
             </svg>
             <svg class="header__logo-image header__logo-image--tablet" width="145" height="40">
-              <use xlink:href="img/logo-adaptive.svg#header-logo-tablet"></use>
+              <use xlink:href="img/sprite.svg#header-logo-tablet"></use>
             </svg>
             <svg class="header__logo-image header__logo-image--desktop" width="147" height="40">
-              <use xlink:href="img/logo-adaptive.svg#header-logo-desktop"></use>
+              <use xlink:href="img/sprite.svg#header-logo-desktop"></use>
             </svg>
           </a>
           <button class="header__menu-toggle header__menu-toggle--closed header__menu-toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -99,10 +99,10 @@
               </li>
               <li class="advantages__item advantages__item--change">
                 <h3 class="advantages__title">Меняет мир вокруг</h3>
-                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы <br>усилить эффект</p>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы&nbsp;<br>усилить эффект</p>
               </li>
               <li class="advantages__item advantages__item--friends">
-                <h3 class="advantages__title">Заводит <br>новых друзей</h3>
+                <h3 class="advantages__title">Заводит&nbsp;<br>новых друзей</h3>
                 <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
@@ -113,8 +113,8 @@
         <div class="container">
           <div class="research__wrapper">
             <div class="research__content">
-              <h2 class="research__title">Эффект <br>на 24 часа!</h2>
-              <p class="research__text">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект <br>от использования приложения длится целые сутки!</p>
+              <h2 class="research__title">Эффект&nbsp;<br>на 24 часа!</h2>
+              <p class="research__text">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект&nbsp;<br>от использования приложения длится целые сутки!</p>
               <a class="research__link" href="#">Узнать больше об исследовании</a>
             </div>
           </div>
@@ -263,10 +263,7 @@
             </div>
           </div>
         </div>
-        <div class="contacts__map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa1a9c70309ffb23f0c3a462957b97d571ff103b023f4eaa8df7ef662efb8aefb&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-          <!-- <img class="contacts__map-image" src="img/map-mobile.png" width="320" height="200" alt="Карта офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"> -->
-        </div>
+        <div class="contacts__map" id="map" role="map" aria-label="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></div>
       </section>
     </main>
     <footer class="footer">
@@ -274,10 +271,10 @@
         <div class="footer__wrapper">
           <a class="footer__logo" aria-label="Логотип приложения «Пинк»">
             <svg class="footer__logo-image footer__logo-image--mobile" width="145" height="40">
-              <use xlink:href="img/logo-adaptive.svg#footer-logo-mobile"></use>
+              <use xlink:href="img/sprite.svg#footer-logo-mobile"></use>
             </svg>
             <svg class="footer__logo-image footer__logo-image--desktop" width="147" height="40">
-              <use xlink:href="img/logo-adaptive.svg#footer-logo-desktop"></use>
+              <use xlink:href="img/sprite.svg#footer-logo-desktop"></use>
             </svg>
           </a>
           <div class="footer__social social">
@@ -297,13 +294,16 @@
             <span class="copyright__text">Разработано</span>
             <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
               <svg class="copyright__logo-image" width="27" height="34">
-                <use xlink:href="img/logo-adaptive.svg#academy-logo"></use>
+                <use xlink:href="img/sprite.svg#academy-logo"></use>
               </svg>
             </a>
           </div>
         </div>
       </div>
     </footer>
-    <script src="js/menu.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=52c3ca84-9e79-4c2c-8b97-cba0f273a813"></script>
+    <script src="js/menu.min.js"></script>
+    <script src="js/plans.min.js"></script>
+    <script src="js/map.min.js"></script>
   </body>
 </html>

@@ -6,7 +6,7 @@
     <title>Каталог — HTML Academy: Пинк</title>
     <link href="img/favicon.ico" rel="shortcut icon">
     <link href="img/favicon.svg" type="image/svg+xml" rel="shortcut icon">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="body">
     <header class="header header--menu-opened">
@@ -14,13 +14,13 @@
         <div class="header__wrapper">
           <a class="header__logo" href="index.html" aria-label="Логотип приложения «Пинк»">
             <svg class="header__logo-image header__logo-image--mobile" width="74" height="23">
-              <use xlink:href="img/logo-adaptive.svg#header-logo-mobile"></use>
+              <use xlink:href="img/sprite.svg#header-logo-mobile"></use>
             </svg>
             <svg class="header__logo-image header__logo-image--tablet" width="145" height="40">
-              <use xlink:href="img/logo-adaptive.svg#header-logo-tablet"></use>
+              <use xlink:href="img/sprite.svg#header-logo-tablet"></use>
             </svg>
             <svg class="header__logo-image header__logo-image--desktop" width="147" height="40">
-              <use xlink:href="img/logo-adaptive.svg#header-logo-desktop"></use>
+              <use xlink:href="img/sprite.svg#header-logo-desktop"></use>
             </svg>
           </a>
           <button class="header__menu-toggle header__menu-toggle--closed header__menu-toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -59,7 +59,7 @@
       </header>
       <div class="container">
         <div class="inner-page__wrapper inner-page__wrapper--wide">
-          <p class="inner-page__text">Взгляните на фотографии, которые выкладывают пользователи! <br>Видите, как не хватает ваших?</p>
+          <p class="inner-page__text">Взгляните на фотографии, которые выкладывают пользователи!&nbsp;<br>Видите, как не хватает ваших?</p>
         </div>
       </div>
       <section class="gallery">
@@ -79,7 +79,7 @@
                 <p class="post__info">
                   <b class="post__author">Анна</b><span class="post__time">(5 минут назад)</span>
                 </p>
-                <p class="post__content">Прыгать или нет? Напишите в комментарии свой совет и <br>смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <p class="post__content">Прыгать или нет? Напишите в комментарии свой совет и&nbsp;<br>смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
                 <button class="post__like" type="button">
                   <div class="post__like-icon"></div>
                   <span class="post__like-text">Нравится: <span class="post__likes-number">215</span></span>
@@ -244,17 +244,17 @@
                     <p class="effects__toggles">
                       <button class="effects__toggle effects__toggle--active" type="button" aria-label="Кадрирование">
                         <svg class="effects__icon effects__icon--crop" width="44" height="44">
-                          <use xlink:href="img/filter-sprite.svg#crop"></use>
+                          <use xlink:href="img/sprite.svg#crop"></use>
                         </svg>
                       </button>
                       <button class="effects__toggle" type="button" aria-label="Заливка">
                         <svg class="effects__icon effects__icon--fill" width="48" height="43">
-                          <use xlink:href="img/filter-sprite.svg#fill"></use>
+                          <use xlink:href="img/sprite.svg#fill"></use>
                         </svg>
                       </button>
                       <button class="effects__toggle" type="button" aria-label="Контраст">
                         <svg class="effects__icon effects__icon--contrast" width="32" height="32">
-                          <use xlink:href="img/filter-sprite.svg#contrast"></use>
+                          <use xlink:href="img/sprite.svg#contrast"></use>
                         </svg>
                       </button>
                     </p>
@@ -301,10 +301,10 @@
         <div class="footer__wrapper">
           <a class="footer__logo" href="index.html" aria-label="Логотип приложения «Пинк»">
             <svg class="footer__logo-image footer__logo-image--mobile" width="145" height="40">
-              <use xlink:href="img/logo-adaptive.svg#footer-logo-mobile"></use>
+              <use xlink:href="img/sprite.svg#footer-logo-mobile"></use>
             </svg>
             <svg class="footer__logo-image footer__logo-image--desktop" width="147" height="40">
-              <use xlink:href="img/logo-adaptive.svg#footer-logo-desktop"></use>
+              <use xlink:href="img/sprite.svg#footer-logo-desktop"></use>
             </svg>
           </a>
           <div class="footer__social social">
@@ -324,13 +324,13 @@
             <span class="copyright__text">Разработано</span>
             <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
               <svg class="copyright__logo-image" width="27" height="34">
-                <use xlink:href="img/logo-adaptive.svg#academy-logo"></use>
+                <use xlink:href="img/sprite.svg#academy-logo"></use>
               </svg>
             </a>
           </div>
         </div>
       </div>
     </footer>
-    <script src="js/menu.js"></script>
+    <script src="js/menu.min.js"></script>
   </body>
 </html>
