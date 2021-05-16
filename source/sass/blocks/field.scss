@@ -95,6 +95,8 @@
   display: flex;
   align-items: center;
   padding: 5px 0;
+  cursor: pointer;
+  user-select: none;
 
   @media (min-width: $tablet-width) {
     padding-top: 4px;
@@ -116,8 +118,7 @@
     margin-right: 21px;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     &::before {
       border-color: $midnight;
     }
@@ -128,6 +129,10 @@
       border-color: $cerise;
     }
   }
+}
+
+.field__checkbox:focus + .field__text::before {
+  border-color: $midnight;
 }
 
 .field__checkbox:checked + .field__text {
@@ -146,6 +151,8 @@
   display: flex;
   align-items: center;
   padding: 1px 0;
+  cursor: pointer;
+  user-select: none;
 
   @media (min-width: $desktop-width) {
     padding: 1px 14px;
@@ -166,8 +173,7 @@
     }
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     &::before {
       border-color: $midnight;
     }
@@ -178,6 +184,10 @@
       border-color: $cerise;
     }
   }
+}
+
+.field__radio:focus + .field__text::before {
+  border-color: $midnight;
 }
 
 .field__radio:checked + .field__text {
