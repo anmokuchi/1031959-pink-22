@@ -1,30 +1,35 @@
 .form__container {
-  display: grid;
-  row-gap: 36px;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
-    row-gap: 65px;
     padding-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 65px;
     column-gap: 70px;
     padding-bottom: 0;
   }
 }
 
 .form__group {
+  margin-bottom: 36px;
+
   @media (min-width: $tablet-width) {
     border: 2px solid $whisper;
     border-radius: 3px;
     padding: 50px 58px;
+    margin-bottom: 65px;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
     padding: 51px 58px;
+    margin: 0;
   }
 
   &--grey-bg {
