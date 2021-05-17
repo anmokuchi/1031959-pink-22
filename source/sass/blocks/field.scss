@@ -73,6 +73,7 @@
 
   &--fix-height {
     min-height: 201px;
+    resize: none;
 
     @media (min-width: $tablet-width) {
       min-height: 193px;
