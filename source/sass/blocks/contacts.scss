@@ -106,15 +106,27 @@
 }
 
 .contacts__map {
+  width: 100%;
   height: 200px;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: center 55%;
+  background-size: auto calc(100% + 300px);
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     height: 374px;
+    background-size: auto calc(100% + 185px);
   }
 
   @media (min-width: $desktop-width) {
     height: 501px;
+    background-position: center;
+    background-size: cover;
   }
 
   &::before {
